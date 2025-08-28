@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://54.252.157.188:9980/amrutha/repository/metlife-releases/</url>
+	      <url>http://172.31.1.255:8081/nexus/repository/metlife-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://54.252.157.188:9980/amrutha/repository/metlife-snapshot/</url>
+	      <url>http://172.31.1.255:8081/nexus/repository/metlife-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
