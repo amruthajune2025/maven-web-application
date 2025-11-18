@@ -39,7 +39,7 @@ pipeline
                 {
                     sh 'docker login -u amrutha1988 -p ${Docker_Hub_Password}'
                 }
-                sh 'docker push amrutha1988/dockerpipeline:${buildNumber}'
+                sh 'docker push amrutha1988/dockerpipeline:${buildNumber} .'
             }
 
         }
