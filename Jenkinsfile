@@ -55,5 +55,4 @@ stage('Delete Docker Image Locally in Jenkins Build Server')
            }
         }
     }
-    }
-}
+    
