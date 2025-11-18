@@ -6,7 +6,6 @@ tools{
 maven 'maven3.8.2'
 
 }
-
 triggers{
 pollSCM('* * * * *')
 }
@@ -51,7 +50,7 @@ stages{
   }
   }
   */
-}//Stages Closing
+}//Stages Closing area
 
 post{
 
