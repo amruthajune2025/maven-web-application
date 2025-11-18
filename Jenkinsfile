@@ -6,6 +6,10 @@ pipeline
     {
         maven 'Maven_3.9.7'
     }
+environment
+    {
+        buildNumber = "${BUILD_NUMBER}"
+    }
     stages
     {
         stage('Git Checkout')
