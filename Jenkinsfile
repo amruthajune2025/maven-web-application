@@ -41,9 +41,9 @@ environment
             {
                 withCredentials([string(credentialsId: 'Docker_Hub_Password', variable: 'Docker_Hub_Password')])
                 {
-                    sh 'docker login -u amrutha1988 -p ${Docker_Hub_Password}'
+                    sh 'docker login -u amrutha2016 -p ${Docker_Hub_Password}'
                 }
-                sh 'docker push amrutha1988/dockerpipeline:${buildNumber} .'
+                sh 'docker push amrutha2016/dockerpipeline:${buildNumber} .'
             }
 
         }
@@ -54,9 +54,9 @@ stage('Delete Docker Image Locally in Jenkins Build Server')
             {
             withCredentials([string(credentialsId: 'Docker_Hub_Password', variable: 'Docker_Hub_Password')]) 
             {
-            sh 'docker login -u amrutha1988 -p ${Docker_Hub_Password}'
+            sh 'docker login -u amrutha2016 -p ${Docker_Hub_Password}'
             }
-                sh 'docker rmi -f amrutha1988/dockerpipeline:${buildNumber}'
+                sh 'docker rmi -f amrutha2016/dockerpipeline:${buildNumber}'
             }
            }
         }
