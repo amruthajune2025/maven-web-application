@@ -21,7 +21,7 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
-
+// deleting image locally to utilize resources
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t amrutha2016/dockerpipeline:${buildNumber} .'
