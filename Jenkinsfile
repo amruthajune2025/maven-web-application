@@ -44,5 +44,16 @@ pipeline {
                 sh 'docker rmi -f amrutha2016/dockerpipeline:${buildNumber}'
             }
         }
+stage('Deploy Application to Docker Deployment Server')
+        {
+            steps()
+            {
+                sshagent(['DeploymentServer_SSH'])
+                {
+                    sh "ssh -o StrictHostKeyChecking=no ubuntu@3.107.53.94 docker rm -f mavenwebapplication || true"
+                    sh "ssh -o StrictHostKeyChecking=no ubuntu@3.107.53.94 docker run -d --name mavenwebapplication -p 8080:8080 amrutha2016/dockerpipeline:${buildNumber}"
+                }
+    }
+}
     }
 }
