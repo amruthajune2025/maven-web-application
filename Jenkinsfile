@@ -37,7 +37,7 @@ pipeline
                 sh 'docker build -t 040983495414.dkr.ecr.ap-southeast-2.amazonaws.com/login/application:${buildNumber} .'
             }
         }
-
+#deployment
         stage('Authenticate and Push Docker Image to AWS ECR')
         {
             steps()
