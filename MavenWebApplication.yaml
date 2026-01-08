@@ -21,12 +21,9 @@ spec:
       labels:
         application: webpage
     spec:
-      imagePullSecrets:
-        - name: ecr-secret
       containers:
       - name: webpage-container
         image: 040983495414.dkr.ecr.ap-southeast-2.amazonaws.com/login/application:Build_Tag
-
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
