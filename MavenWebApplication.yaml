@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: webpage-container
-        image: 040983495414.dkr.ecr.ap-southeast-2.amazonaws.com/login/application:Build_Tag
+        image: 040983495414.dkr.ecr.ap-southeast-2.amazonaws.com/login-application:Build_Tag
 
         imagePullPolicy: Always
         ports:
